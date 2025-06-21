@@ -30,7 +30,7 @@ p {
 
 /* Container */
 .container {
-  max-width: 414px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -39,6 +39,8 @@ p {
   width: 100%;
   height: 500px;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Button */
@@ -82,7 +84,7 @@ p {
 
 /* Footer */
 footer {
-  width: 312px;
+  max-width: 312px;
   margin: 0 auto;
   padding: 0px 10px;
   margin-bottom: 40px;
