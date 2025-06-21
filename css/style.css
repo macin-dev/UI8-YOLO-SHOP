@@ -61,24 +61,24 @@ p {
   text-decoration: line-through solid #ffed48;
 }
 
-/* About Us  */
-.about-us {
+/* Article section  */
+.article-container {
   padding: 35px 30px 50px;
 }
 
-.about-title {
+.article-title {
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 30px;
 }
 
-.about-us p {
+.article-container p {
   font-size: 15px;
   margin-bottom: 25px;
 }
 
-.about-us p:last-child {
+.article-container p:last-child {
   margin-bottom: 0;
 }
 
@@ -135,8 +135,8 @@ footer {
     height: 100%;
   }
 
-  /* About */
-  .about-us {
+  /* Article section */
+  .article-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,7 +144,7 @@ footer {
     padding: 0px 100px 60px;
   }
 
-  .about-title {
+  .article-title {
     font-size: 45px;
   }
 
