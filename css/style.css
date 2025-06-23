@@ -83,6 +83,10 @@ p {
   background-color: #eada00;
 }
 
+.btn-contact {
+  margin-bottom: 50px;
+}
+
 /* Article section  */
 .article-container {
   padding: 35px 30px 50px;
@@ -103,6 +107,27 @@ p {
 
 .article-container p:last-child {
   margin-bottom: 0;
+}
+
+/* Contact information */
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-list img {
+  display: inline-block;
+  width: 18px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: lighter;
+  font-size: 15px;
 }
 
 /* Footer */
@@ -188,6 +213,11 @@ footer {
 
   /* Subscribe */
   .subscribe {
+    order: 1;
+  }
+
+  /* Contact */
+  .hero-contact {
     order: 1;
   }
 
