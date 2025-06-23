@@ -198,6 +198,7 @@ footer {
     justify-content: center;
     align-items: start;
     padding: 0px 120px;
+    flex: 1;
   }
 
   .article-title {
