@@ -8,6 +8,11 @@
 }
 
 /* Inherited styles */
+
+html {
+  font-size: 15px;
+}
+
 body {
   font-family: Helvetica, sans-serif;
 }
@@ -116,7 +121,7 @@ a:hover {
 }
 
 .article-title {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 25px;
@@ -124,7 +129,6 @@ a:hover {
 }
 
 .article-container p {
-  font-size: 15px;
   margin-bottom: 40px;
 }
 
@@ -154,7 +158,6 @@ a:hover {
   align-items: center;
   gap: 15px;
   font-weight: lighter;
-  font-size: 15px;
 }
 
 /* Footer */
@@ -182,7 +185,6 @@ footer {
 }
 
 .copyright {
-  font-size: 15px;
   text-transform: uppercase;
 }
 
@@ -190,7 +192,6 @@ footer {
 .input-group {
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: 20px;
-  padding: 5px 0;
 }
 
 .input-label {
@@ -209,9 +210,9 @@ footer {
 .input-field {
   font-family: inherit;
   border: none;
-  font-size: 16px;
   font-weight: lighter;
   height: 25px;
+  flex: 1 1 auto;
 }
 
 .input-conditions {
@@ -244,7 +245,7 @@ footer {
   }
 
   .hero-img {
-    width: 720px;
+    width: 50%;
     height: 100%;
   }
 
@@ -254,7 +255,7 @@ footer {
   }
 
   /* Subscribe */
-  .subscribe {
+  .hero-subscribe {
     order: 1;
   }
 
@@ -268,7 +269,6 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
     padding: 0px 120px;
     flex: 1;
   }
