@@ -64,7 +64,7 @@ a:hover {
 }
 
 /* Button */
-.btn-primary {
+.btn-secondary {
   font-size: 18px;
   border: none;
   background-color: transparent;
@@ -77,12 +77,12 @@ a:hover {
   transition: text-decoration 0.2s 0s ease-in-out;
 }
 
-.btn-primary:hover {
+.btn-secondary:hover {
   text-decoration: line-through solid #ffed48;
 }
 
 /* Secondary button */
-.btn-secondary {
+.btn-primary {
   background-color: #f9e900;
   border: none;
   width: 170px;
@@ -98,7 +98,7 @@ a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.btn-secondary:hover {
+.btn-primary:hover {
   background-color: #eada00;
 }
 
