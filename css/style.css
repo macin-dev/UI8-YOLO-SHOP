@@ -29,6 +29,21 @@ p {
   font-weight: lighter;
 }
 
+/* Links */
+a:link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline solid #000;
+}
+
 /* Container */
 .container {
   max-width: 1440px;
@@ -42,6 +57,10 @@ p {
   display: block;
   object-fit: cover;
   object-position: center;
+}
+
+.hero-signup {
+  display: none;
 }
 
 /* Button */
@@ -87,6 +106,10 @@ p {
   margin-bottom: 50px;
 }
 
+.btn-signup {
+  margin-bottom: 50px;
+}
+
 /* Article section  */
 .article-container {
   padding: 35px 30px 50px;
@@ -107,6 +130,10 @@ p {
 
 .article-container p:last-child {
   margin-bottom: 0;
+}
+
+.article-signin {
+  padding-bottom: 130px;
 }
 
 /* Contact information */
@@ -187,6 +214,16 @@ footer {
   height: 25px;
 }
 
+.input-conditions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-conditions span {
+  font-weight: lighter;
+}
+
 /* Desktop breakpoint 1440 */
 @media screen and (min-width: 970px) {
   body {
@@ -209,6 +246,11 @@ footer {
   .hero-img {
     width: 720px;
     height: 100%;
+  }
+
+  .hero-signup {
+    display: block;
+    object-position: 72%;
   }
 
   /* Subscribe */
