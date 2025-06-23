@@ -68,6 +68,10 @@ a:hover {
   display: none;
 }
 
+.hero-signin {
+  display: none;
+}
+
 /* Button */
 .btn-secondary {
   font-size: 18px;
@@ -115,6 +119,10 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.btn-signin {
+  margin-bottom: 50px;
+}
+
 /* Article section  */
 .article-container {
   padding: 35px 30px 50px;
@@ -138,6 +146,23 @@ a:hover {
 
 .article-signin {
   padding-bottom: 130px;
+}
+
+/* Log in with social media */
+.signin-account {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signin-social-media {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.signin-account p {
+  margin: 0;
 }
 
 /* Contact information */
@@ -252,6 +277,11 @@ footer {
   .hero-signup {
     display: block;
     object-position: 72%;
+  }
+
+  .hero-signin {
+    display: block;
+    object-position: 5%;
   }
 
   /* Subscribe */
