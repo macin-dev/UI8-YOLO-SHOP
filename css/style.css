@@ -55,6 +55,40 @@ a:hover {
   margin: 0 auto;
 }
 
+/* Home */
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/hero-banner/yolo-home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  padding: 0 30px 150px;
+}
+
+.main-content p {
+  text-align: center;
+}
+
+.home-footer {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  padding: 0;
+}
+
 /* Hero Banner */
 .hero-img {
   width: 100%;
@@ -121,6 +155,23 @@ a:hover {
 
 .btn-signin {
   margin-bottom: 50px;
+}
+
+/* Outline button */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #000;
+  width: 170px;
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Article section  */
