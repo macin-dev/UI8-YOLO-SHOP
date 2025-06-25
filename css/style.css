@@ -8,7 +8,6 @@
 }
 
 /* Inherited styles */
-
 html {
   font-size: 15px;
 }
@@ -298,6 +297,83 @@ footer {
   font-weight: lighter;
 }
 
+/* GLOBAL STYLES */
+/* header */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-title {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-section .btn-back {
+  margin-bottom: 0;
+}
+
+/* Catalogue */
+.catalogue {
+  display: grid;
+  row-gap: 20px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 15px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  background-color: #fff;
+}
+
+.item-box__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-box__header h3 {
+  font-size: 18px;
+}
+
+.item-box__header span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: lighter;
+}
+
+.item-box__header span img {
+  display: inline-block;
+  width: 18px;
+}
+
+.item-box__body {
+  width: 100%;
+  max-width: 366px;
+}
+
+.item-box__body img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.navigate-buttons {
+  display: none;
+}
+
 /* Desktop breakpoint 1440 */
 @media screen and (min-width: 970px) {
   body {
@@ -353,6 +429,49 @@ footer {
 
   .article-title {
     font-size: 45px;
+  }
+
+  /* GLOBAL STYLES */
+  .main-title {
+    font-size: 45px;
+  }
+
+  /* Catalogue */
+  .catalogue {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .catalogue article:nth-child(2),
+  article:nth-child(3) {
+    justify-content: center;
+  }
+
+  .main-text {
+    grid-area: 1 / 3 / 2 / -1;
+    justify-content: flex-start;
+    padding-left: 100px;
+    padding-bottom: 0;
+  }
+
+  .navigate-buttons {
+    display: flex;
+  }
+
+  .btn-navigate {
+    border: 2px solid #000;
+    background-color: transparent;
+    padding: 12px 13.5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-navigate:hover {
+    background-color: #d2d2d2;
+  }
+
+  .navigate-left {
+    border-right: 0px;
   }
 
   /* Footer */
