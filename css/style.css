@@ -105,7 +105,23 @@ a:hover {
 }
 
 /* Button */
-.btn-secondary {
+.btn {
+  font-size: 18px;
+  width: 170px;
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Back button */
+.btn-back {
   font-size: 18px;
   border: none;
   background-color: transparent;
@@ -118,25 +134,14 @@ a:hover {
   transition: text-decoration 0.2s 0s ease-in-out;
 }
 
-.btn-secondary:hover {
+.btn-back:hover {
   text-decoration: line-through solid #ffed48;
 }
 
-/* Secondary button */
+/* Primary button */
 .btn-primary {
   background-color: #f9e900;
   border: none;
-  width: 170px;
-  height: 55px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
 }
 
 .btn-primary:hover {
@@ -159,17 +164,11 @@ a:hover {
 .btn-outline {
   background-color: transparent;
   border: 2px solid #000;
-  width: 170px;
-  height: 55px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 2px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  border: 2px solid #eada00;
+  background-color: #eada00;
 }
 
 /* Article section  */
