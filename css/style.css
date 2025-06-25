@@ -1,3 +1,18 @@
+/* Custom font face */
+@font-face {
+  font-family: "Coco gothic";
+  src: url("../fonts/CocoGothic-Bold_trial.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Coco gothic";
+  src: url("../fonts/CocoGothic_trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Reset styles */
 *,
 *::before,
@@ -176,6 +191,7 @@ a:hover {
 }
 
 .article-title {
+  font-family: "Coco gothic", sans-serif;
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -306,6 +322,7 @@ footer {
 }
 
 .main-title {
+  font-family: "Coco gothic", Helvetica, sans-serif;
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 2px;
