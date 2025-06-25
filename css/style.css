@@ -81,12 +81,10 @@ a:hover {
 }
 
 .home-footer {
-  width: 100%;
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translate(-50%);
-  padding: 0;
 }
 
 /* Hero Banner */
@@ -238,9 +236,8 @@ a:hover {
 
 /* Footer */
 footer {
-  max-width: 312px;
+  width: 312px;
   margin: 0 auto;
-  padding: 0px 10px;
   margin-bottom: 40px;
 }
 
@@ -262,6 +259,7 @@ footer {
 
 .copyright {
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Input */
