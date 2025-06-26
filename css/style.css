@@ -426,19 +426,19 @@ footer {
 @media screen and (min-width: 970px) {
   body {
     width: 100vw;
-    height: 100vh;
-    overflow-y: hidden;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
   }
 
   .container {
     position: relative;
-    height: 100%;
+    flex: 1;
   }
 
   /* Hero Banner */
   .hero-banner {
     display: flex;
-    height: 100%;
   }
 
   .hero-img {
