@@ -386,6 +386,7 @@ footer {
 .item-box__body {
   width: 100%;
   max-width: 366px;
+  position: relative;
 }
 
 .item-box__body img {
@@ -394,8 +395,34 @@ footer {
   vertical-align: bottom;
 }
 
+/* buttons */
 .navigate-buttons {
   display: none;
+}
+
+.btn-cart {
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e313c;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cart img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-cart:hover {
+  background-color: #000;
 }
 
 /*  Filter */
