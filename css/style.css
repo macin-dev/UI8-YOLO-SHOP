@@ -69,6 +69,13 @@ a:hover {
   margin: 0 auto;
 }
 
+.child-container {
+  padding: 24px 24px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 /* Home */
 .main {
   width: 100vw;
@@ -449,6 +456,56 @@ footer {
   text-decoration: line-through solid #ffed48;
 }
 
+/* SALES PAGE */
+.sales {
+  display: grid;
+  row-gap: 20px;
+}
+
+.item-box__title {
+  text-transform: uppercase;
+  font-size: 21px !important;
+  letter-spacing: 1px;
+}
+
+.item-box__discount {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.item-box__mobile-img {
+  display: block;
+}
+
+.item-box__desktop-img {
+  display: none;
+}
+
+.sales-1 {
+  color: #f7fe24;
+}
+
+.sales-2 {
+  color: #7aece2;
+}
+
+.sales-3 {
+  color: #ffffff;
+}
+
+.sales-4 {
+  color: #f7fe24;
+}
+
+.sales-5 {
+  color: #7aece2;
+}
+
 /* Desktop breakpoint 1440 */
 @media screen and (min-width: 970px) {
   body {
@@ -461,6 +518,11 @@ footer {
   .container {
     position: relative;
     flex: 1;
+  }
+
+  .child-container {
+    padding: 0 118px 60px;
+    gap: 40px;
   }
 
   /* Hero Banner */
@@ -559,6 +621,37 @@ footer {
   .filter-area {
     justify-content: flex-start;
     gap: 40px;
+  }
+
+  /* SALES */
+  .sales {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .sales article:nth-child(4) {
+    grid-area: 1 / 2 / 3 / 3;
+    justify-content: flex-start;
+  }
+
+  .sales article:nth-child(4) .item-box__header {
+    order: 1;
+  }
+
+  .sales article:nth-child(5) .item-box__header {
+    order: 1;
+  }
+
+  .sales article:nth-child(6) .item-box__header {
+    order: 1;
+  }
+
+  .item-box__mobile-img {
+    display: none;
+  }
+
+  .item-box__desktop-img {
+    display: block;
   }
 
   /* Footer */
