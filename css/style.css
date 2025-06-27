@@ -439,6 +439,7 @@ footer {
   /* Hero Banner */
   .hero-banner {
     display: flex;
+    height: 100%;
   }
 
   .hero-img {
