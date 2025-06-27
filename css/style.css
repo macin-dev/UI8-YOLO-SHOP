@@ -94,13 +94,6 @@ a:hover {
   text-align: center;
 }
 
-.home-footer {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%);
-}
-
 /* Hero Banner */
 .hero-img {
   width: 100%;
@@ -253,6 +246,13 @@ footer {
   width: 312px;
   margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.fixed-footer {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
 }
 
 .social-media {
@@ -534,7 +534,7 @@ footer {
   }
 
   /* Footer */
-  footer {
+  .absolute-footer {
     position: absolute;
     left: 50%;
     bottom: 0;
