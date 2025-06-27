@@ -1,0 +1,8 @@
+/* BREAKPOINTS */
+/* 970px - Tablet & Desktop */
+@media screen and (min-width: 970px) {
+  /* Layout */
+  .hero-subscribe {
+    order: 1;
+  }
+}

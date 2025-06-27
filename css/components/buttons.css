@@ -1,0 +1,54 @@
+/* BUTTON STYLESHEET */
+.btn {
+  font-size: 18px;
+  width: 170px;
+  height: 55px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Back button */
+.btn-back {
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  /* property name | duration | delay | easing function */
+  transition: text-decoration 0.2s 0s ease-in-out;
+}
+
+.btn-back:hover {
+  text-decoration: line-through solid #ffed48;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #f9e900;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #eada00;
+}
+
+/* Outline button */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.btn-outline:hover {
+  border: 2px solid #eada00;
+  background-color: #eada00;
+}

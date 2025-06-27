@@ -1,0 +1,32 @@
+/* CONTACT STYLESHEET */
+.contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-list img {
+  display: inline-block;
+  width: 18px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: lighter;
+}
+
+/* Button */
+.btn-contact {
+  margin-bottom: 50px;
+}
+
+/* BREAKPOINTS */
+/* 970px - Tablet & Desktop */
+@media screen and (min-width: 970px) {
+  .hero-contact {
+    order: 1;
+  }
+}

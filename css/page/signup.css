@@ -1,0 +1,19 @@
+/* SIGNUP STYLESHEET */
+/* Layout */
+.hero-signup {
+  display: none;
+}
+
+/* Button */
+.btn-signup {
+  margin-bottom: 50px;
+}
+
+/* BREAKPOINTS */
+/* 970px - Tablet & Desktop */
+@media screen and (min-width: 970px) {
+  .hero-signup {
+    display: block;
+    object-position: 72%;
+  }
+}

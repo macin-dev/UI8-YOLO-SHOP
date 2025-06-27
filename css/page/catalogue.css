@@ -1,0 +1,75 @@
+/* CATALOGUE STYLESHEET */
+.catalogue {
+  display: grid;
+  row-gap: 20px;
+}
+
+/* Buttons */
+.btn-cart {
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e313c;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cart img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-cart:hover {
+  background-color: #000;
+}
+
+/*  Filter */
+.filter-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-filter {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.button-filter:hover {
+  text-decoration: line-through solid #ffed48;
+}
+
+/* BREAKPOINTS */
+/* 970px - Tablet & Desktop */
+@media screen and (min-width: 970px) {
+  .catalogue {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .catalogue article:nth-child(2),
+  article:nth-child(3) {
+    justify-content: center;
+  }
+
+  /* Filter */
+  .filter-area {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
