@@ -1,0 +1,194 @@
+/* MY ACCOUNT STYLESHEET */
+/* Layout */
+.account {
+  display: grid;
+  row-gap: 20px;
+}
+
+/* Title */
+.account__title {
+  font-family: "Coco gothic", Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Profile description */
+.account__user {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.account__photo {
+  width: 60px;
+  height: 60px;
+}
+
+.account__photo img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.account__description {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+/* List settings */
+.account__settings ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.account__option {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.account__option:hover {
+  background-color: #f4f4f4;
+}
+
+.account__option span {
+  flex: 1;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.account__option img:nth-child(4) {
+  display: none;
+}
+
+.account__settings-title {
+  display: none;
+}
+
+/* Form */
+.account__settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*  Payment */
+.account__payment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.payment__method {
+  width: 42px;
+  height: 42px;
+}
+
+.payment__details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1 1 60%;
+}
+
+.account__payment .btn__payment {
+  width: auto;
+  padding: 5px 15px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.btn__delete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* BREAKPOINTS */
+/* 970px - Tablet & Desktop */
+@media screen and (min-width: 970px) {
+  /* Layout */
+  .account {
+    grid-template-columns: minmax(auto, 390px) 1fr;
+    column-gap: 125px;
+    row-gap: 30px;
+  }
+
+  .account__settings {
+    grid-area: 2 / 2 / 4 / -1;
+    padding-top: 20px;
+  }
+
+  .account__header {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .account__lists {
+    grid-area: 3 / 1 / 5 / 2;
+  }
+
+  .account__payment {
+    grid-area: 4 / 2 / 5 / -1;
+  }
+
+  /* Title */
+  .account__title {
+    padding: 15px 0;
+    font-size: 45px;
+  }
+
+  /*  Settings*/
+  .account__settings-title {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .account__option img:nth-child(4) {
+    display: inline-block;
+  }
+
+  .account__option img:nth-child(3) {
+    display: none;
+  }
+
+  /* Form */
+  .account__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding-top: 10px;
+  }
+
+  .account__form .input-group:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  /* Payment */
+  .payment__details {
+    flex: 1 1 auto;
+  }
+
+  .account__payment button {
+    margin: 0;
+  }
+
+  .btn__container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
