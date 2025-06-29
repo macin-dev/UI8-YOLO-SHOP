@@ -50,10 +50,16 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 25px 0;
+  height: 74px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border-bottom: 1px solid #f2f2f2;
+}
+
+.option-active img:first-child {
+  background-color: #f9e900;
+  align-self: stretch;
+  width: 24px;
 }
 
 .account__option:hover {
@@ -65,6 +71,15 @@
   flex: 1;
   text-transform: capitalize;
   text-decoration: underline;
+}
+
+.option-active {
+  background-color: #f4f4f4;
+}
+
+.option-active span {
+  font-weight: bold;
+  text-decoration: line-through;
 }
 
 .account__option img:nth-child(4) {
