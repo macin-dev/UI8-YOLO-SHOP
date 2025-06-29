@@ -11,6 +11,7 @@
   font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Profile description */
@@ -52,10 +53,11 @@
   padding: 25px 0;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  border-radius: 8px;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .account__option:hover {
+  border-radius: 8px;
   background-color: #f4f4f4;
 }
 
@@ -126,7 +128,7 @@
   }
 
   .account__settings {
-    grid-area: 2 / 2 / 4 / -1;
+    grid-area: 2 / 2 / 5 / -1;
     padding-top: 20px;
   }
 
@@ -136,10 +138,6 @@
 
   .account__lists {
     grid-area: 3 / 1 / 5 / 2;
-  }
-
-  .account__payment {
-    grid-area: 4 / 2 / 5 / -1;
   }
 
   /* Title */
@@ -169,7 +167,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    padding-top: 10px;
+    padding: 10px 0 20px;
   }
 
   .account__form .input-group:nth-child(2) {

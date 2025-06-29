@@ -55,7 +55,7 @@
   /* SALES */
   .sales {
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 15px;
   }
 
   .sales article:nth-child(4) {
