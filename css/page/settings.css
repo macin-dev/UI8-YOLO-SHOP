@@ -5,92 +5,11 @@
   row-gap: 20px;
 }
 
-/* Title */
-.account__title {
-  font-family: "Coco gothic", Helvetica, sans-serif;
-  font-size: 35px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Profile description */
-.account__user {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.account__photo {
-  width: 60px;
-  height: 60px;
-}
-
-.account__photo img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.account__description {
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: capitalize;
-}
-
-/* List settings */
-.account__settings ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.account__option {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  height: 74px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.option-active img:first-child {
-  background-color: #f9e900;
-  align-self: stretch;
-  width: 24px;
-}
-
-.account__option:hover {
-  border-radius: 8px;
-  background-color: #f4f4f4;
-}
-
-.account__option span {
-  flex: 1;
-  text-transform: capitalize;
-  text-decoration: underline;
-}
-
-.option-active {
-  background-color: #f4f4f4;
-}
-
-.option-active span {
-  font-weight: bold;
-  text-decoration: line-through;
-}
-
-.account__option img:nth-child(4) {
-  display: none;
-}
-
+/* Form settings */
 .account__settings-title {
   display: none;
 }
 
-/* Form */
 .account__settings {
   display: flex;
   flex-direction: column;
@@ -155,26 +74,12 @@
     grid-area: 3 / 1 / 5 / 2;
   }
 
-  /* Title */
-  .account__title {
-    padding: 15px 0;
-    font-size: 45px;
-  }
-
   /*  Settings*/
   .account__settings-title {
     display: block;
     font-size: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
-  }
-
-  .account__option img:nth-child(4) {
-    display: inline-block;
-  }
-
-  .account__option img:nth-child(3) {
-    display: none;
   }
 
   /* Form */
