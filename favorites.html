@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/page/favorites.css" />
+    <!-- Components -->
+    <link rel="stylesheet" href="css/components/input.css" />
+    <link rel="stylesheet" href="css/components/buttons.css" />
+    <link rel="stylesheet" href="css/components/menuAccount.css" />
+    <title>My Favorites | YOLO SHOP</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Child container -->
+      <div class="child-container">
+        <!-- Main -->
+        <main class="account">
+          <!-- Back button -->
+          <button class="btn-back" type="button">
+            <img src="icons/arrow_left.svg" alt="arrow left" />
+            <span>&nbsp;&nbsp;women&nbsp;&nbsp;</span>
+          </button>
+
+          <!-- Title -->
+          <h2 class="account__title">my account</h2>
+
+          <!-- User -->
+          <header class="account__header">
+            <div class="account__user">
+              <img
+                class="account_photo"
+                src="https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/avatar.png"
+                alt="Julia photo"
+              />
+
+              <div class="account__description">
+                hi, <br />
+                julia steevenson
+              </div>
+            </div>
+          </header>
+
+          <!-- List of options -->
+          <div class="account__lists">
+            <ul>
+              <li class="account__option">
+                <img src="icons/box.svg" alt="box icon" />
+                <span>my orders</span>
+
+                <!-- Display only on mobile -->
+                <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                <!-- Display only on desktop -->
+                <img src="icons/drop_down-right.svg" alt="arrow icon" />
+              </li>
+              <li class="account__option option-active">
+                <img src="icons/heart.svg" alt="heart icon" />
+                <span>my favorites</span>
+
+                <!-- Display only on mobile -->
+                <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                <!-- Display only on desktop -->
+                <img src="icons/drop_down-right.svg" alt="arrow icon" />
+              </li>
+              <li class="account__option">
+                <img src="icons/gift.svg" alt="gift icon" />
+                <span>gift cards & vouchers</span>
+
+                <!-- Display only on mobile -->
+                <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                <!-- Display only on desktop -->
+                <img src="icons/drop_down-right.svg" alt="arrow icon" />
+              </li>
+              <li class="account__option">
+                <img src="icons/settings.svg" alt="settings icon" />
+                <span>account settings</span>
+
+                <!-- Display only on mobile -->
+                <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                <!-- Display only on desktop -->
+                <img src="icons/drop_down-right.svg" alt="arrow icon" />
+              </li>
+              <li class="account__option">
+                <img src="icons/info.svg" alt="info sign icon" />
+                <span>need help?</span>
+
+                <!-- Display only on mobile -->
+                <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                <!-- Display only on desktop -->
+                <img src="icons/drop_down-right.svg" alt="arrow icon" />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Settings -->
+          <article class="account__settings">
+            <div class="order__text">
+              <!-- Account settings title -->
+              <h3 class="account__settings-title">my favorites</h3>
+
+              <!-- Description -->
+              <p>you saved items</p>
+            </div>
+
+            <!-- Item box -->
+            <div class="favorites">
+              <article class="item-box">
+                <div class="item-box__header">
+                  <h3>Puff-sleeve sweater</h3>
+                  <span>
+                    <img src="icons/money.svg" alt="money icon" />
+                    29.99
+                  </span>
+                </div>
+
+                <div class="item-box__body">
+                  <img
+                    src="https://ui8-assets.s3.us-east-1.amazonaws.com/catalogue/cat-product3.png"
+                    alt="woman wearing a black sweater"
+                  />
+
+                  <!-- Add to cart button -->
+                  <button type="button" class="btn-cart">
+                    <img src="icons/cart-white.svg" alt="cart icon" />
+                  </button>
+                </div>
+              </article>
+
+              <article class="item-box">
+                <div class="item-box__header">
+                  <h3>Puff-sleeve sweater</h3>
+                  <span>
+                    <img src="icons/money.svg" alt="money icon" />
+                    49.99
+                  </span>
+                </div>
+
+                <div class="item-box__body">
+                  <img
+                    src="https://ui8-assets.s3.us-east-1.amazonaws.com/catalogue/cat-product2.png"
+                    alt="woman wearing a yellow jumpsuit"
+                  />
+
+                  <!-- Add to cart button -->
+                  <button type="button" class="btn-cart">
+                    <img src="icons/cart-white.svg" alt="cart icon" />
+                  </button>
+                </div>
+              </article>
+
+              <article class="item-box">
+                <div class="item-box__header">
+                  <h3>Gingham Denim...</h3>
+                  <span>
+                    <img src="icons/money.svg" alt="money icon" />
+                    49.99
+                  </span>
+                </div>
+
+                <div class="item-box__body">
+                  <img
+                    src="https://ui8-assets.s3.us-east-1.amazonaws.com/catalogue/cat-product6.png"
+                    alt="woman wearing a yellow sweater"
+                  />
+
+                  <!-- Add to cart button -->
+                  <button type="button" class="btn-cart">
+                    <img src="icons/cart-white.svg" alt="cart icon" />
+                  </button>
+                </div>
+              </article>
+            </div>
+          </article>
+        </main>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <ul class="social-media">
+          <li>
+            <span class="left-line line"></span>
+          </li>
+          <li>
+            <img src="icons/instagram.svg" alt="instagram icon" />
+          </li>
+          <li>
+            <img src="icons/facebook.svg" alt="facebook icon" />
+          </li>
+          <li>
+            <img src="icons/twitter.svg" alt="x icon" />
+          </li>
+          <li>
+            <span class="right-line line"></span>
+          </li>
+        </ul>
+
+        <!-- Copyright -->
+        <h4 class="copyright">Yolo &copy; 2025. All rights reserved</h4>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+/* MY FAVORITES STYLESHEET */
+/* Layout */
+.account {
+  display: grid;
+  row-gap: 20px;
+}
+
+.account__settings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.account__settings-title {
+  display: none;
+}
+
+/* Card product */
+.item-box {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 175px;
+}
+
+.item-box__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-box__header h3 {
+  font-size: 18px;
+}
+
+.item-box__header span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: lighter;
+}
+
+.item-box__header img {
+  width: 18px;
+  height: 18px;
+}
+
+.item-box__body {
+  width: 100%;
+  height: 238px;
+  position: relative;
+}
+
+.item-box__body img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Buttons */
+.account .btn-back {
+  margin: 0;
+}
+
+.btn-cart {
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e313c;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cart img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-cart:hover {
+  background-color: #000;
+}
+
+/* Card container */
+.favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
