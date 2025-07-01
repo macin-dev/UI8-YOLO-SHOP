@@ -109,6 +109,7 @@
               <p>Displaying all orders</p>
             </div>
 
+            <!-- Order delivered -->
             <div class="order">
               <!-- Track orders -->
               <div class="order__header">
@@ -151,6 +152,50 @@
                 </button>
                 <button class="btn btn-outline" type="button">
                   track order
+                  <img src="icons/arrow_right.svg" alt="arrow right" />
+                </button>
+              </div>
+            </div>
+
+            <!-- Order canceled -->
+            <div class="order order__canceled">
+              <!-- Track orders -->
+              <div class="order__header">
+                <h3 class="order__title">order canceled</h3>
+
+                <!-- Order data -->
+                <div class="order__data order__id data__canceled">
+                  <span>order no:</span>
+                  <span>12345678912</span>
+                </div>
+
+                <!-- Shipped date -->
+                <div class="order__data order__delivered data__canceled">
+                  <span>shipped date:</span>
+                  <span>21 / 04 / 2020</span>
+                </div>
+              </div>
+
+              <!-- Items -->
+              <div class="order__items data__canceled">
+                <img
+                  src="https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/sales/sales-3.png"
+                  alt="woman wearing a blue sweater"
+                />
+                <img
+                  src="https://ui8-assets.s3.us-east-1.amazonaws.com/catalogue/cat-product3.png"
+                  alt="woman wearing a black sweater"
+                />
+                <img
+                  src="https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/sales/sales-1.png"
+                  alt="man wearing a gray jacket"
+                />
+              </div>
+
+              <!-- Buttons -->
+              <div class="order__buttons">
+                <button class="btn btn-outline" type="button">
+                  view order
                   <img src="icons/arrow_right.svg" alt="arrow right" />
                 </button>
               </div>

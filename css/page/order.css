@@ -92,6 +92,15 @@
   width: 200px;
 }
 
+/* Order canceled */
+.order__canceled {
+  border: 1px solid #f2f2f2;
+}
+
+.data__canceled {
+  opacity: 0.5;
+}
+
 /* BREAKPOINTS */
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
@@ -181,5 +190,10 @@
 
   .order__buttons button:last-child {
     flex: 1 1 auto;
+  }
+
+  /* Order canceled */
+  .order__canceled .order__buttons button {
+    flex: 0 1 auto;
   }
 }
