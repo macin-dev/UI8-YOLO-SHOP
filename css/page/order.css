@@ -19,7 +19,7 @@
 
 /* Order component */
 .order {
-  width: fit-content;
+  max-width: 366px;
   background-color: #fbfbfb;
   display: flex;
   flex-direction: column;
@@ -141,6 +141,7 @@
 
   /* Order */
   .order {
+    max-width: initial;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
