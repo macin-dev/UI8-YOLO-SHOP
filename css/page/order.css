@@ -1,0 +1,185 @@
+/* MY ORDER STYLESHEET */
+/* Layout */
+.account {
+  display: grid;
+  row-gap: 20px;
+}
+
+.account__settings-title {
+  display: none;
+}
+
+.account__settings {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 20px;
+}
+
+/* Order component */
+.order {
+  width: fit-content;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.order__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.order__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order__title {
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+/* Order data */
+.order__data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order__data span:first-child {
+  color: #7e959e;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.order__data span:last-child {
+  font-weight: lighter;
+}
+
+/* Order items */
+.order__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.order__items img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Buttons */
+.account button {
+  margin: 0;
+}
+
+.order__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.order__buttons button {
+  width: 200px;
+}
+
+/* BREAKPOINTS */
+/* 970px - Tablet & Desktop */
+@media screen and (min-width: 970px) {
+  /* Layout */
+  .account {
+    grid-template-columns: minmax(auto, 390px) 1fr;
+    column-gap: 113px;
+  }
+
+  .account__title {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .account__header {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .account__lists {
+    grid-area: 4 / 1 / 6 / 2;
+  }
+
+  .account__settings {
+    grid-area: 1 / 2 / 6 / -2;
+  }
+
+  .order {
+    margin-top: 15px;
+    row-gap: 28px;
+  }
+
+  /* Text */
+  .account__settings-title {
+    display: block;
+    font-size: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /* Order */
+  .order {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .order__header {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .order__title {
+    width: auto;
+    flex: 1 1 auto;
+  }
+
+  .order__id {
+    flex: 1 0 auto;
+    text-align: end;
+  }
+
+  .order__delivered {
+    flex: 1 0 auto;
+    text-align: end;
+  }
+
+  /* Items */
+  .order__items {
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .order__items img {
+    width: 118px;
+    height: 118px;
+  }
+
+  /* Buttons */
+  .order__buttons {
+    gap: 8px;
+  }
+
+  .order__buttons button:first-child {
+    flex: 1 1 auto;
+  }
+
+  .order__buttons button:last-child {
+    flex: 1 1 auto;
+  }
+}
