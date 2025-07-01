@@ -15,7 +15,7 @@
     <div class="container">
       <div class="child-container">
         <!-- Main -->
-        <main class="account">
+        <main class="grid__account">
           <!-- Title -->
           <h2 class="account__title">my account</h2>
 
@@ -36,7 +36,7 @@
           </header>
 
           <!-- List of options -->
-          <div class="account__lists">
+          <div class="account__menu">
             <ul>
               <li class="account__option">
                 <img src="icons/box.svg" alt="box icon" />
@@ -92,114 +92,119 @@
           </div>
 
           <!-- Settings -->
-          <article class="account__settings">
-            <!-- Account settings title -->
-            <h3 class="account__settings-title">account settings</h3>
+          <article class="account__content">
+            <!-- Header section -->
+            <div class="settings__header">
+              <!-- Account settings title -->
+              <h3 class="settings__title">account settings</h3>
 
-            <!-- Description -->
-            <p>
-              Feel free to edit any of your details below so your ASOS account
-              is totally up to date.
-            </p>
+              <!-- Description -->
+              <p>
+                Feel free to edit any of your details below so your ASOS account
+                is totally up to date.
+              </p>
+            </div>
 
-            <!-- Form -->
-            <form class="account__form">
-              <div class="input-group">
-                <label for="name" class="input-label">first name</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/user.svg"
-                    alt="user icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="name"
-                    value="John Doe"
-                    placeholder="enter your name"
-                  />
+            <div class="settings__body">
+              <!-- Form -->
+              <form class="settings__form">
+                <div class="input-group">
+                  <label for="name" class="input-label">first name</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/user.svg"
+                      alt="user icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="name"
+                      value="John Doe"
+                      placeholder="enter your name"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="input-group">
-                <label for="email" class="input-label">your email</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/email.svg"
-                    alt="email icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="name"
-                    value="JohnDoe@gmail.com"
-                    placeholder="enter your email"
-                  />
+                <div class="input-group">
+                  <label for="email" class="input-label">your email</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/email.svg"
+                      alt="email icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="email"
+                      value="JohnDoe@gmail.com"
+                      placeholder="enter your email"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="input-group">
-                <label for="lastname" class="input-label">last name</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/user.svg"
-                    alt="user icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="lastname"
-                    value="Doe"
-                    placeholder="last name"
-                  />
+                <div class="input-group">
+                  <label for="lastname" class="input-label">last name</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/user.svg"
+                      alt="user icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="lastname"
+                      value="Doe"
+                      placeholder="last name"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="input-group">
-                <label for="birth" class="input-label">date of birth</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/calendar.svg"
-                    alt="calendar icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="date"
-                    id="birth"
-                    value="1989-07-27"
-                  />
+                <div class="input-group">
+                  <label for="birth" class="input-label">date of birth</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/calendar.svg"
+                      alt="calendar icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="date"
+                      id="birth"
+                      value="1989-07-27"
+                    />
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
 
-            <!-- Payment -->
-            <div class="account__payment">
-              <img
-                class="payment__method"
-                src="icons/mastercard.svg"
-                alt="mastercard payment"
-              />
+              <!-- Payment -->
+              <div class="settings__payment">
+                <img
+                  class="payment__method"
+                  src="icons/mastercard.svg"
+                  alt="mastercard payment"
+                />
 
-              <div class="payment__details">
-                <span>Mastercard (5985)</span>
-                <span>Exp: 11/27</span>
-                <span>Yulia Shahoferova</span>
-              </div>
+                <div class="payment__details">
+                  <span>Mastercard (5985)</span>
+                  <span>Exp: 11/27</span>
+                  <span>Yulia Shahoferova</span>
+                </div>
 
-              <div class="btn__container">
-                <button type="button" class="btn__delete">
-                  <img src="icons/delete.svg" alt="delete icon" />
+                <div class="btn__container">
+                  <button type="button" class="btn__delete">
+                    <img src="icons/delete.svg" alt="delete icon" />
+                  </button>
+                </div>
+
+                <button class="btn btn__payment btn-outline" type="button">
+                  new payment method
+                  <img src="icons/arrow_right.svg" alt="arrow right" />
                 </button>
               </div>
-
-              <button class="btn btn__payment btn-outline" type="button">
-                new payment method
-                <img src="icons/arrow_right.svg" alt="arrow right" />
-              </button>
             </div>
           </article>
         </main>
