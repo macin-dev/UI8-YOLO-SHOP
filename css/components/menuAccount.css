@@ -70,7 +70,7 @@
 
 /* BREAKPOINTS */
 /* 970px - Tablet & Desktop */
-@media screen and (min-wdith: 970px) {
+@media screen and (min-width: 970px) {
   /* Title */
   .account__title {
     padding: 15px 0;
