@@ -1,24 +1,36 @@
 /* MY ORDER STYLESHEET */
 /* Layout */
-.account {
+.grid__account {
   display: grid;
   row-gap: 20px;
 }
 
-.account__settings-title {
-  display: none;
-}
-
-.account__settings {
+.account__content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
   gap: 20px;
 }
 
+.order__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order__body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 20px;
+}
+
+/* Order content */
+.order__title {
+  display: none;
+}
+
 /* Order component */
-.order {
+.order__details {
   max-width: 366px;
   background-color: #fbfbfb;
   display: flex;
@@ -27,23 +39,18 @@
   padding: 20px;
 }
 
-.order__header {
+.order__info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
 
-.order__text {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.order__title {
+.order__info-title {
   width: 100%;
   text-transform: capitalize;
   font-size: 18px;
+  text-align: start;
 }
 
 /* Order data */
@@ -77,7 +84,7 @@
 }
 
 /* Buttons */
-.account button {
+.grid__account button {
   margin: 0;
 }
 
@@ -105,9 +112,13 @@
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
   /* Layout */
-  .account {
+  .grid__account {
     grid-template-columns: minmax(auto, 390px) 1fr;
     column-gap: 113px;
+  }
+
+  .grid__account .btn-back {
+    grid-area: 1 / 1 / 2 / 2;
   }
 
   .account__title {
@@ -118,21 +129,16 @@
     grid-area: 3 / 1 / 4 / 2;
   }
 
-  .account__lists {
-    grid-area: 4 / 1 / 6 / 2;
+  .account__menu {
+    grid-area: 4 / 1 / 5 / 2;
   }
 
-  .account__settings {
-    grid-area: 1 / 2 / 6 / -2;
-  }
-
-  .order {
-    margin-top: 15px;
-    row-gap: 28px;
+  .account__content {
+    grid-area: 1 / 2 / 5 / -1;
   }
 
   /* Text */
-  .account__settings-title {
+  .order__title {
     display: block;
     font-size: 21px;
     letter-spacing: 1px;
@@ -140,21 +146,25 @@
   }
 
   /* Order */
-  .order {
+  .order__body {
+    margin-top: 20px;
+  }
+
+  .order__details {
     max-width: initial;
     width: 100%;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .order__header {
+  .order__info {
     width: 100%;
     align-items: center;
     justify-content: space-between;
   }
 
-  .order__title {
+  .order__info-title {
     width: auto;
     flex: 1 1 auto;
   }
