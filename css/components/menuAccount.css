@@ -73,7 +73,7 @@
 @media screen and (min-width: 970px) {
   /* Title */
   .account__title {
-    padding: 15px 0;
+    margin-bottom: 20px;
     font-size: 45px;
   }
 
