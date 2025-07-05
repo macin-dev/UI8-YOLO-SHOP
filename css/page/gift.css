@@ -1,0 +1,79 @@
+/* GIFT CARDS STYLESHEET */
+/* Layout content */
+.gift__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gift__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 30px;
+  padding: 34px;
+}
+
+/* Title */
+.gift__title {
+  display: none;
+}
+
+/* Voucher card */
+.voucher__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.voucher__title {
+  font-weight: bold;
+  font-size: 21px;
+  text-align: center;
+}
+
+.voucher__description {
+  text-align: center;
+}
+
+/* Voucher buttons */
+.vouchers__buttons {
+  max-width: 295px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vouchers__buttons button {
+  width: 100%;
+  padding: 10px 14px;
+}
+
+.vouchers__buttons button:last-child {
+  background-color: #2e313c;
+}
+
+.vouchers__buttons button:last-child:hover {
+  background-color: #000000;
+}
+
+.vouchers__buttons button:last-child span {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 970px) {
+  /* Title */
+  .gift__title {
+    display: block;
+    font-size: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .gift__body {
+    margin-top: 20px;
+  }
+}
