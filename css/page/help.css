@@ -89,12 +89,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .default__profile strong {
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 5px;
+}
+
+/* Shape triangule */
+.help__display-info::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 20px;
+  right: -12px;
+  border-style: solid;
+  border-width: 12px 0 12px 12px;
+  border-color: transparent transparent transparent #fbfbfb;
 }
 
 @media screen and (min-width: 970px) {
