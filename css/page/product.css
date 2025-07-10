@@ -22,7 +22,7 @@
 
 .product__image {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: block;
 }
 
@@ -329,5 +329,123 @@
   /* Carousel image preview */
   .product__preview__lists {
     left: 240px;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  /* Container */
+  .child-container {
+    overflow: auto;
+  }
+
+  /* Layout */
+  .product {
+    grid-template-columns: minmax(0, 588px) minmax(auto, 488px);
+    justify-content: space-between;
+    row-gap: 25px;
+    column-gap: 20px;
+  }
+
+  .product .btn-back {
+    grid-area: 1 / 2 / 2 / -1;
+  }
+
+  .product__preview {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .product__details {
+    grid-area: 2 / 2 / 3 / -1;
+  }
+
+  /* Product preview */
+  .product__preview {
+    max-width: initial;
+    max-height: initial;
+    width: 100%;
+    height: 620px;
+  }
+
+  .product__preview:hover {
+    cursor: zoom-in;
+  }
+
+  .product__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .product__preview__lists {
+    position: static;
+    width: fit-content;
+    overflow-y: hidden;
+    top: initial;
+    left: initial;
+    align-self: end;
+  }
+
+  .product__preview__lists div {
+    width: 166px;
+    height: 95px;
+  }
+
+  /* Product details */
+  .product__details {
+    gap: 30px;
+  }
+
+  .product__header {
+    gap: 20px;
+  }
+
+  /* Size & Colors */
+  .product__customize {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  /* Qty */
+  .product__qty__container {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .product__qty {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .product__price {
+    order: 1;
+    margin-bottom: 15px;
+  }
+
+  .product__customize .btn-primary {
+    justify-self: start;
+  }
+
+  /* Size */
+  .product__size__container {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  /* Color */
+  .product__color__container {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  /* Button */
+  .product__customize .btn-primary {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  /* Product list preview */
+  .product__preview__lists {
+    width: 100%;
+    overflow-x: scroll;
   }
 }
