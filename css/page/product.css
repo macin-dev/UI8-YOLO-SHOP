@@ -384,11 +384,9 @@
 
   .product__preview__lists {
     position: static;
-    width: fit-content;
+    width: 100%;
     overflow-y: hidden;
-    top: initial;
-    left: initial;
-    align-self: end;
+    overflow-x: scroll;
   }
 
   .product__preview__lists div {
@@ -481,10 +479,11 @@
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (min-width: 1350px) {
   /* Product list preview */
   .product__preview__lists {
-    width: 100%;
-    overflow-x: scroll;
+    width: fit-content;
+    align-self: end;
+    overflow-x: hidden;
   }
 }
