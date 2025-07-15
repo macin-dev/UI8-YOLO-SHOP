@@ -286,6 +286,116 @@
   height: 32px;
 }
 
+/* Summary */
+.order__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 366px;
+}
+
+/* Title */
+.summary__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary__title h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+/* Details */
+.summary__details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.summary__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary__header p,
+span {
+  color: #828282;
+  font-weight: lighter;
+}
+
+.summary__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.summary__list span {
+  flex: 0 1 50px;
+}
+
+.summary__total > p,
+.summary__total > span {
+  font-weight: bold;
+  color: #2e313c;
+}
+
+.summary__shipping span {
+  text-transform: uppercase;
+}
+
+/* Summary footer */
+.summary__footer > p {
+  color: #828282;
+}
+
+.summary__strong {
+  color: #2e313c;
+  font-weight: bold;
+}
+
+.summary__strong:nth-child(2) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.summary__strong:nth-child(3) {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Summary buttons */
+.summary__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: center;
+}
+
+.summary__buttons .btn {
+  width: 190px;
+}
+
+.btn__shopping {
+  background-color: #ffffff;
+}
+
+.btn__shopping:hover {
+  background-color: #f2f2f2;
+}
+
+.btn__checkout {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn__checkout:hover {
+  background-color: #2e313c;
+}
+
 @media screen and (min-width: 414px) {
   /* ITEM CARD */
   .item__card {
