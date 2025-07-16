@@ -321,7 +321,7 @@
 }
 
 .summary__header p,
-span {
+.summary__header span {
   color: #828282;
   font-weight: lighter;
 }
@@ -388,15 +388,24 @@ span {
 }
 
 .btn__checkout {
-  background-color: #000000;
+  background-color: #2e313c;
   color: #ffffff;
 }
 
 .btn__checkout:hover {
-  background-color: #2e313c;
+  background-color: #000000;
 }
 
 @media screen and (min-width: 414px) {
+  /* Layout */
+  .cart {
+    justify-items: center;
+  }
+
+  .cart .btn-back {
+    justify-self: start;
+  }
+
   /* ITEM CARD */
   .item__card {
     grid-template-columns: repeat(2, auto);
@@ -421,5 +430,109 @@ span {
   /* Color */
   .product__color__container {
     justify-self: end;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  /* Grid Layout */
+  .cart {
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+  }
+
+  /* Button */
+  .cart .btn-back {
+    grid-area: 1 / 1 / 2 / -1;
+  }
+
+  /* Item card */
+  .cart .item__card:nth-child(2) {
+    grid-area: 2 / 1 / 3 / -1;
+  }
+
+  .cart .item__card:nth-child(3) {
+    grid-area: 3 / 1 / 4 / -1;
+  }
+
+  .item__card {
+    grid-template-columns: auto 2fr 1fr 2fr repeat(2, 1fr);
+    max-width: initial;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Preview */
+  .item__preview {
+    width: 186px;
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: stretch;
+  }
+
+  /* Info */
+  .item__info {
+    grid-area: 1 / 2 / 2 / 3;
+    gap: 0;
+    align-self: stretch;
+    justify-content: space-between;
+  }
+
+  /* Qty */
+  .product__qty__container {
+    grid-area: 1 / 3 / 2 / 4;
+    align-self: center;
+    justify-self: end;
+  }
+
+  /* Size */
+  .product__size__container {
+    grid-area: 1 / 4 / 2 / 5;
+    justify-self: center;
+  }
+
+  /* Color */
+  .product__color__container {
+    grid-area: 1 / 5 / 2 / 5;
+    align-self: center;
+  }
+
+  /* Delete button */
+  .type__button {
+    position: static;
+    justify-self: end;
+  }
+
+  /* Order summary */
+  .order__summary {
+    grid-area: 4 / 1 / 5 / -1;
+    max-width: 525px;
+    align-items: center;
+    justify-self: center;
+    gap: 25px;
+  }
+
+  .summary__title {
+    gap: 50px;
+  }
+
+  .summary__details {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .summary__header {
+    flex: 0 1 200px;
+    line-height: 1.7;
+  }
+
+  .summary__footer {
+    flex: 1;
+  }
+
+  .summary__footer p {
+    line-height: 1.7;
+  }
+
+  .summary__buttons {
+    flex-direction: row;
   }
 }
