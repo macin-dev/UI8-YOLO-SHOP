@@ -1,0 +1,57 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout .btn-back {
+  margin: 0;
+}
+
+.form-title {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin: 30px 0 10px;
+}
+
+.checkout__title {
+  font-family: "Coco gothic", Helvetica, sans-serif;
+  font-size: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-group .input-group {
+  margin: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 414px) {
+  /* Payment */
+  .payment__info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .payment__info .form-title,
+  .input-group {
+    flex: 0 1 100%;
+  }
+
+  .payment__info .input-group:nth-child(4) {
+    flex: 0 1 48%;
+  }
+
+  .payment__info .input-group:nth-child(5) {
+    flex: 0 1 48%;
+  }
+}
