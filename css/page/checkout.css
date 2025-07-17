@@ -9,16 +9,8 @@
 }
 
 .checkout__form {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.form-title {
-  font-weight: bold;
-  text-transform: capitalize;
-  font-size: 18px;
-  margin-bottom: 10px;
+  display: grid;
+  row-gap: 30px;
 }
 
 .checkout__title {
@@ -27,6 +19,14 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/* Form */
+.form-title {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .form-group .input-group {
@@ -98,6 +98,11 @@ input[type="checkbox"]:checked + .switch::before {
   translate: 18px;
 }
 
+/* Payment */
+.payment__info .input-group:nth-child(4) {
+  order: 1;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 414px) {
   /* Payment */
@@ -107,7 +112,7 @@ input[type="checkbox"]:checked + .switch::before {
     justify-content: space-between;
   }
 
-  .payment__info .form-title,
+  .form-title,
   .input-group {
     flex: 0 1 100%;
   }
@@ -118,5 +123,59 @@ input[type="checkbox"]:checked + .switch::before {
 
   .payment__info .input-group:nth-child(5) {
     flex: 0 1 48%;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  /* Checkout title */
+  .checkout__title {
+    font-size: 45px;
+  }
+
+  /* Form */
+  .checkout__form {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: end;
+    column-gap: 12px;
+  }
+
+  /* Form group */
+  .form-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .input-group {
+    flex: 0 1 286px;
+  }
+
+  /* Name & last name */
+  .user__names {
+    grid-area: 1 / 1 / 2 / 3;
+    justify-content: space-between;
+  }
+
+  /* Payment */
+  .payment__info {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  /* Billing address */
+  .billing__address {
+    grid-area: 1 / 3 / 3 / 5;
+  }
+
+  /* Terms & conditions */
+  .form__checkbox {
+    grid-area: 3 / 1 / 4 / 3;
+    max-width: 485px;
+    width: 100%;
+  }
+
+  /* Pay button */
+  .checkout__form .btn {
+    margin-top: 20px;
+    grid-area: 4 / 1 / 5 / 2;
   }
 }
