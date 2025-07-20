@@ -13,174 +13,181 @@
     <!-- Components -->
     <link rel="stylesheet" href="css/components/menuAccount.css" />
     <link rel="stylesheet" href="css/components/buttons.css" />
+
+    <!-- Wrapper -->
+    <link rel="stylesheet" href="css/layout/wrapper.css" />
     <title>Need Help | YOLO SHOP</title>
   </head>
   <body>
-    <!-- Container -->
-    <div class="container">
-      <!-- Child container -->
-      <div class="child-container">
-        <!-- Main -->
-        <div class="grid__account">
-          <!-- Back button -->
-          <button class="btn-back" type="button">
-            <img src="icons/arrow_left.svg" alt="arrow left" />
-            <span>&nbsp;&nbsp;back&nbsp;&nbsp;</span>
-          </button>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Content container -->
+      <div class="container">
+        <!-- Child container -->
+        <div class="child-container">
+          <!-- Main -->
+          <div class="grid__account">
+            <!-- Back button -->
+            <button class="btn-back" type="button">
+              <img src="icons/arrow_left.svg" alt="arrow left" />
+              <span>&nbsp;&nbsp;back&nbsp;&nbsp;</span>
+            </button>
 
-          <!-- Title -->
-          <h2 class="account__title">my account</h2>
+            <!-- Title -->
+            <h2 class="account__title">my account</h2>
 
-          <!-- User -->
-          <header class="account__header">
-            <div class="account__user">
-              <img
-                class="account_photo"
-                src="https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/avatar.png"
-                alt="Julia photo"
-              />
+            <!-- User -->
+            <header class="account__header">
+              <div class="account__user">
+                <img
+                  class="account_photo"
+                  src="https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/avatar.png"
+                  alt="Julia photo"
+                />
 
-              <div class="account__description">
-                hi, <br />
-                julia steevenson
+                <div class="account__description">
+                  hi, <br />
+                  julia steevenson
+                </div>
               </div>
-            </div>
-          </header>
+            </header>
 
-          <!-- Menu -->
-          <div class="account__menu">
-            <ul>
-              <li class="account__option">
-                <a href="orders.html">
-                  <img src="icons/box.svg" alt="box icon" />
-                  <span>my orders</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option">
-                <a href="favorites.html">
-                  <img src="icons/heart.svg" alt="heart icon" />
-                  <span>my favorites</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option">
-                <a href="gift.html">
-                  <img src="icons/gift.svg" alt="gift icon" />
-                  <span>gift cards & vouchers</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option">
-                <a href="settings.html">
-                  <img src="icons/settings.svg" alt="settings icon" />
-                  <span>account settings</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option option-active">
-                <a href="help.html">
-                  <img src="icons/info.svg" alt="info sign icon" />
-                  <span>need help?</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Content -->
-          <div class="account__content">
-            <!-- header -->
-            <div class="help__header">
-              <!-- Account settings title -->
-              <h3 class="help__title">need help?</h3>
-
-              <!-- Description -->
-              <p>Here are the popular FAQ down below</p>
-            </div>
-
-            <!-- Body -->
-            <div class="help__body">
+            <!-- Menu -->
+            <div class="account__menu">
               <ul>
-                <li class="help__option">
-                  <div class="help__option-header">
-                    <img src="icons/info.svg" alt="interrogation mark" />
-                    <span>What is your Returns Policy?</span>
+                <li class="account__option">
+                  <a href="orders.html">
+                    <img src="icons/box.svg" alt="box icon" />
+                    <span>my orders</span>
 
-                    <!-- Default display icon -->
+                    <!-- Display only on mobile -->
                     <img src="icons/drop_down.svg" alt="arrow icon" />
 
-                    <!-- Display only on active -->
-                    <img src="icons/drop_up.svg" alt="arrow icon" />
-                  </div>
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
                 </li>
+                <li class="account__option">
+                  <a href="favorites.html">
+                    <img src="icons/heart.svg" alt="heart icon" />
+                    <span>my favorites</span>
 
-                <li class="help__option help-active-option">
-                  <div class="help__option-header">
-                    <img src="icons/info.svg" alt="interrogation mark" />
-                    <span>Can I track the delivery of my order? </span>
-
-                    <!-- Default display icon -->
+                    <!-- Display only on mobile -->
                     <img src="icons/drop_down.svg" alt="arrow icon" />
 
-                    <!-- Display only on active -->
-                    <img src="icons/drop_up.svg" alt="arrow icon" />
-                  </div>
-
-                  <div class="help__display">
-                    <p class="help__display-info">
-                      If your order has been sent to you using a trackable
-                      service, you can follow its journey to you. You'll receive
-                      a shipping confirmation email from our warehouse once your
-                      order is on its way; simply click on your tracking link on
-                      this email to view the up to date tracking.
-                    </p>
-
-                    <span class="default__profile"> <strong>y</strong> </span>
-                  </div>
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
                 </li>
+                <li class="account__option">
+                  <a href="gift.html">
+                    <img src="icons/gift.svg" alt="gift icon" />
+                    <span>gift cards & vouchers</span>
 
-                <li class="help__option">
-                  <div class="help__option-header">
-                    <img src="icons/info.svg" alt="interrogation mark" />
-                    <span
-                      >Will my parcel be charged customs and import
-                      charges?</span
-                    >
-
-                    <!-- Default display icon -->
+                    <!-- Display only on mobile -->
                     <img src="icons/drop_down.svg" alt="arrow icon" />
 
-                    <!-- Display only on active -->
-                    <img src="icons/drop_up.svg" alt="arrow icon" />
-                  </div>
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
+                </li>
+                <li class="account__option">
+                  <a href="settings.html">
+                    <img src="icons/settings.svg" alt="settings icon" />
+                    <span>account settings</span>
+
+                    <!-- Display only on mobile -->
+                    <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
+                </li>
+                <li class="account__option option-active">
+                  <a href="help.html">
+                    <img src="icons/info.svg" alt="info sign icon" />
+                    <span>need help?</span>
+
+                    <!-- Display only on mobile -->
+                    <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
                 </li>
               </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="account__content">
+              <!-- header -->
+              <div class="help__header">
+                <!-- Account settings title -->
+                <h3 class="help__title">need help?</h3>
+
+                <!-- Description -->
+                <p>Here are the popular FAQ down below</p>
+              </div>
+
+              <!-- Body -->
+              <div class="help__body">
+                <ul>
+                  <li class="help__option">
+                    <div class="help__option-header">
+                      <img src="icons/info.svg" alt="interrogation mark" />
+                      <span>What is your Returns Policy?</span>
+
+                      <!-- Default display icon -->
+                      <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                      <!-- Display only on active -->
+                      <img src="icons/drop_up.svg" alt="arrow icon" />
+                    </div>
+                  </li>
+
+                  <li class="help__option help-active-option">
+                    <div class="help__option-header">
+                      <img src="icons/info.svg" alt="interrogation mark" />
+                      <span>Can I track the delivery of my order? </span>
+
+                      <!-- Default display icon -->
+                      <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                      <!-- Display only on active -->
+                      <img src="icons/drop_up.svg" alt="arrow icon" />
+                    </div>
+
+                    <div class="help__display">
+                      <p class="help__display-info">
+                        If your order has been sent to you using a trackable
+                        service, you can follow its journey to you. You'll
+                        receive a shipping confirmation email from our warehouse
+                        once your order is on its way; simply click on your
+                        tracking link on this email to view the up to date
+                        tracking.
+                      </p>
+
+                      <span class="default__profile"> <strong>y</strong> </span>
+                    </div>
+                  </li>
+
+                  <li class="help__option">
+                    <div class="help__option-header">
+                      <img src="icons/info.svg" alt="interrogation mark" />
+                      <span
+                        >Will my parcel be charged customs and import
+                        charges?</span
+                      >
+
+                      <!-- Default display icon -->
+                      <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                      <!-- Display only on active -->
+                      <img src="icons/drop_up.svg" alt="arrow icon" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

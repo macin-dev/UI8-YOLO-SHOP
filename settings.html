@@ -14,246 +14,253 @@
     <link rel="stylesheet" href="css/components/input.css" />
     <link rel="stylesheet" href="css/components/buttons.css" />
     <link rel="stylesheet" href="css/components/menuAccount.css" />
+
+    <!-- Wrapper -->
+    <link rel="stylesheet" href="css/layout/wrapper.css" />
     <title>My Account | YOLO SHOP</title>
   </head>
   <body>
-    <div class="container">
-      <div class="child-container">
-        <!-- Main -->
-        <main class="grid__account">
-          <!-- Back button -->
-          <button class="btn-back" type="button">
-            <img src="icons/arrow_left.svg" alt="arrow left" />
-            <span>&nbsp;&nbsp;back&nbsp;&nbsp;</span>
-          </button>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Content container -->
+      <div class="container">
+        <div class="child-container">
+          <!-- Main -->
+          <main class="grid__account">
+            <!-- Back button -->
+            <button class="btn-back" type="button">
+              <img src="icons/arrow_left.svg" alt="arrow left" />
+              <span>&nbsp;&nbsp;back&nbsp;&nbsp;</span>
+            </button>
 
-          <!-- Title -->
-          <h2 class="account__title">my account</h2>
+            <!-- Title -->
+            <h2 class="account__title">my account</h2>
 
-          <!-- User -->
-          <header class="account__header">
-            <div class="account__user">
-              <img
-                class="account_photo"
-                src="https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/avatar.png"
-                alt="Julia photo"
-              />
-
-              <div class="account__description">
-                hi, <br />
-                julia steevenson
-              </div>
-            </div>
-          </header>
-
-          <!-- List of options -->
-          <div class="account__menu">
-            <ul>
-              <li class="account__option">
-                <a href="orders.html">
-                  <img src="icons/box.svg" alt="box icon" />
-                  <span>my orders</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option">
-                <a href="favorites.html">
-                  <img src="icons/heart.svg" alt="heart icon" />
-                  <span>my favorites</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option">
-                <a href="gift.html">
-                  <img src="icons/gift.svg" alt="gift icon" />
-                  <span>gift cards & vouchers</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option option-active">
-                <a href="settings.html">
-                  <img src="icons/settings.svg" alt="settings icon" />
-                  <span>account settings</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-              <li class="account__option">
-                <a href="help.html">
-                  <img src="icons/info.svg" alt="info sign icon" />
-                  <span>need help?</span>
-
-                  <!-- Display only on mobile -->
-                  <img src="icons/drop_down.svg" alt="arrow icon" />
-
-                  <!-- Display only on desktop -->
-                  <img src="icons/drop_down-right.svg" alt="arrow icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Settings -->
-          <article class="account__content">
-            <!-- Header section -->
-            <div class="settings__header">
-              <!-- Account settings title -->
-              <h3 class="settings__title">account settings</h3>
-
-              <!-- Description -->
-              <p>
-                Feel free to edit any of your details below so your ASOS account
-                is totally up to date.
-              </p>
-            </div>
-
-            <div class="settings__body">
-              <!-- Form -->
-              <form class="settings__form">
-                <div class="input-group">
-                  <label for="name" class="input-label">first name</label>
-                  <div class="input-area">
-                    <img
-                      class="input-icon"
-                      src="icons/user.svg"
-                      alt="user icon"
-                    />
-                    <input
-                      class="input-field"
-                      type="text"
-                      id="name"
-                      value="John Doe"
-                      placeholder="enter your name"
-                    />
-                  </div>
-                </div>
-
-                <div class="input-group">
-                  <label for="email" class="input-label">your email</label>
-                  <div class="input-area">
-                    <img
-                      class="input-icon"
-                      src="icons/email.svg"
-                      alt="email icon"
-                    />
-                    <input
-                      class="input-field"
-                      type="text"
-                      id="email"
-                      value="JohnDoe@gmail.com"
-                      placeholder="enter your email"
-                    />
-                  </div>
-                </div>
-
-                <div class="input-group">
-                  <label for="lastname" class="input-label">last name</label>
-                  <div class="input-area">
-                    <img
-                      class="input-icon"
-                      src="icons/user.svg"
-                      alt="user icon"
-                    />
-                    <input
-                      class="input-field"
-                      type="text"
-                      id="lastname"
-                      value="Doe"
-                      placeholder="last name"
-                    />
-                  </div>
-                </div>
-
-                <div class="input-group">
-                  <label for="birth" class="input-label">date of birth</label>
-                  <div class="input-area">
-                    <img
-                      class="input-icon"
-                      src="icons/calendar.svg"
-                      alt="calendar icon"
-                    />
-                    <input
-                      class="input-field"
-                      type="date"
-                      id="birth"
-                      value="1989-07-27"
-                    />
-                  </div>
-                </div>
-              </form>
-
-              <!-- Payment -->
-              <div class="settings__payment">
+            <!-- User -->
+            <header class="account__header">
+              <div class="account__user">
                 <img
-                  class="payment__method"
-                  src="icons/mastercard.svg"
-                  alt="mastercard payment"
+                  class="account_photo"
+                  src="https://ui8-assets.s3.us-east-1.amazonaws.com/yolo-shop/avatar.png"
+                  alt="Julia photo"
                 />
 
-                <div class="payment__details">
-                  <span>Mastercard (5985)</span>
-                  <span>Exp: 11/27</span>
-                  <span>Yulia Shahoferova</span>
+                <div class="account__description">
+                  hi, <br />
+                  julia steevenson
                 </div>
+              </div>
+            </header>
 
-                <div class="btn__container">
-                  <button type="button" class="btn__delete">
-                    <img src="icons/delete.svg" alt="delete icon" />
+            <!-- List of options -->
+            <div class="account__menu">
+              <ul>
+                <li class="account__option">
+                  <a href="orders.html">
+                    <img src="icons/box.svg" alt="box icon" />
+                    <span>my orders</span>
+
+                    <!-- Display only on mobile -->
+                    <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
+                </li>
+                <li class="account__option">
+                  <a href="favorites.html">
+                    <img src="icons/heart.svg" alt="heart icon" />
+                    <span>my favorites</span>
+
+                    <!-- Display only on mobile -->
+                    <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
+                </li>
+                <li class="account__option">
+                  <a href="gift.html">
+                    <img src="icons/gift.svg" alt="gift icon" />
+                    <span>gift cards & vouchers</span>
+
+                    <!-- Display only on mobile -->
+                    <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
+                </li>
+                <li class="account__option option-active">
+                  <a href="settings.html">
+                    <img src="icons/settings.svg" alt="settings icon" />
+                    <span>account settings</span>
+
+                    <!-- Display only on mobile -->
+                    <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
+                </li>
+                <li class="account__option">
+                  <a href="help.html">
+                    <img src="icons/info.svg" alt="info sign icon" />
+                    <span>need help?</span>
+
+                    <!-- Display only on mobile -->
+                    <img src="icons/drop_down.svg" alt="arrow icon" />
+
+                    <!-- Display only on desktop -->
+                    <img src="icons/drop_down-right.svg" alt="arrow icon" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Settings -->
+            <article class="account__content">
+              <!-- Header section -->
+              <div class="settings__header">
+                <!-- Account settings title -->
+                <h3 class="settings__title">account settings</h3>
+
+                <!-- Description -->
+                <p>
+                  Feel free to edit any of your details below so your ASOS
+                  account is totally up to date.
+                </p>
+              </div>
+
+              <div class="settings__body">
+                <!-- Form -->
+                <form class="settings__form">
+                  <div class="input-group">
+                    <label for="name" class="input-label">first name</label>
+                    <div class="input-area">
+                      <img
+                        class="input-icon"
+                        src="icons/user.svg"
+                        alt="user icon"
+                      />
+                      <input
+                        class="input-field"
+                        type="text"
+                        id="name"
+                        value="John Doe"
+                        placeholder="enter your name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="input-group">
+                    <label for="email" class="input-label">your email</label>
+                    <div class="input-area">
+                      <img
+                        class="input-icon"
+                        src="icons/email.svg"
+                        alt="email icon"
+                      />
+                      <input
+                        class="input-field"
+                        type="text"
+                        id="email"
+                        value="JohnDoe@gmail.com"
+                        placeholder="enter your email"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="input-group">
+                    <label for="lastname" class="input-label">last name</label>
+                    <div class="input-area">
+                      <img
+                        class="input-icon"
+                        src="icons/user.svg"
+                        alt="user icon"
+                      />
+                      <input
+                        class="input-field"
+                        type="text"
+                        id="lastname"
+                        value="Doe"
+                        placeholder="last name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="input-group">
+                    <label for="birth" class="input-label">date of birth</label>
+                    <div class="input-area">
+                      <img
+                        class="input-icon"
+                        src="icons/calendar.svg"
+                        alt="calendar icon"
+                      />
+                      <input
+                        class="input-field"
+                        type="date"
+                        id="birth"
+                        value="1989-07-27"
+                      />
+                    </div>
+                  </div>
+                </form>
+
+                <!-- Payment -->
+                <div class="settings__payment">
+                  <img
+                    class="payment__method"
+                    src="icons/mastercard.svg"
+                    alt="mastercard payment"
+                  />
+
+                  <div class="payment__details">
+                    <span>Mastercard (5985)</span>
+                    <span>Exp: 11/27</span>
+                    <span>Yulia Shahoferova</span>
+                  </div>
+
+                  <div class="btn__container">
+                    <button type="button" class="btn__delete">
+                      <img src="icons/delete.svg" alt="delete icon" />
+                    </button>
+                  </div>
+
+                  <button class="btn btn__payment btn-outline" type="button">
+                    new payment method
+                    <img src="icons/arrow_right.svg" alt="arrow right" />
                   </button>
                 </div>
-
-                <button class="btn btn__payment btn-outline" type="button">
-                  new payment method
-                  <img src="icons/arrow_right.svg" alt="arrow right" />
-                </button>
               </div>
-            </div>
-          </article>
-        </main>
+            </article>
+          </main>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+          <ul class="social-media">
+            <li>
+              <span class="left-line line"></span>
+            </li>
+            <li>
+              <img src="icons/instagram.svg" alt="instagram icon" />
+            </li>
+            <li>
+              <img src="icons/facebook.svg" alt="facebook icon" />
+            </li>
+            <li>
+              <img src="icons/twitter.svg" alt="x icon" />
+            </li>
+            <li>
+              <span class="right-line line"></span>
+            </li>
+          </ul>
+
+          <!-- Copyright -->
+          <h4 class="copyright">Yolo &copy; 2025. All rights reserved</h4>
+        </footer>
       </div>
-
-      <!-- Footer -->
-      <footer>
-        <ul class="social-media">
-          <li>
-            <span class="left-line line"></span>
-          </li>
-          <li>
-            <img src="icons/instagram.svg" alt="instagram icon" />
-          </li>
-          <li>
-            <img src="icons/facebook.svg" alt="facebook icon" />
-          </li>
-          <li>
-            <img src="icons/twitter.svg" alt="x icon" />
-          </li>
-          <li>
-            <span class="right-line line"></span>
-          </li>
-        </ul>
-
-        <!-- Copyright -->
-        <h4 class="copyright">Yolo &copy; 2025. All rights reserved</h4>
-      </footer>
     </div>
   </body>
 </html>

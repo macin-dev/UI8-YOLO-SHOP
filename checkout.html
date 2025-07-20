@@ -11,294 +11,307 @@
     <link rel="stylesheet" href="css/components/input.css" />
     <link rel="stylesheet" href="css/page/checkout.css" />
 
+    <!-- Wrapper -->
+    <link rel="stylesheet" href="css/layout/wrapper.css" />
     <title>Checkout | YOLO SHOP</title>
   </head>
   <body>
-    <!-- Container -->
-    <div class="container">
-      <!-- Child container -->
-      <div class="child-container">
-        <!-- Main -->
-        <main class="checkout">
-          <!-- Back button -->
-          <button class="btn-back" type="button">
-            <img src="icons/arrow_left.svg" alt="arrow left" />
-            <span>&nbsp;&nbsp;back&nbsp;&nbsp;</span>
-          </button>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Content container -->
+      <div class="container">
+        <!-- Child container -->
+        <div class="child-container">
+          <!-- Main -->
+          <main class="checkout">
+            <!-- Back button -->
+            <button class="btn-back" type="button">
+              <img src="icons/arrow_left.svg" alt="arrow left" />
+              <span>&nbsp;&nbsp;back&nbsp;&nbsp;</span>
+            </button>
 
-          <!-- Title -->
-          <h2 class="checkout__title">checkout</h2>
+            <!-- Title -->
+            <h2 class="checkout__title">checkout</h2>
 
-          <!-- Form -->
-          <form class="checkout__form">
-            <!-- Name & last name -->
-            <div class="form-group user__names">
-              <div class="input-group">
-                <label for="name" class="input-label">first name</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/user.svg"
-                    alt="user icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="name"
-                    value="John"
-                    placeholder="enter your name"
-                  />
+            <!-- Form -->
+            <form class="checkout__form">
+              <!-- Name & last name -->
+              <div class="form-group user__names">
+                <div class="input-group">
+                  <label for="name" class="input-label">first name</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/user.svg"
+                      alt="user icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="name"
+                      value="John"
+                      placeholder="enter your name"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="lastname" class="input-label">last name</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/user.svg"
+                      alt="user icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="lastname"
+                      value="Doe"
+                      placeholder="enter your last name"
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div class="input-group">
-                <label for="lastname" class="input-label">last name</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/user.svg"
-                    alt="user icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="lastname"
-                    value="Doe"
-                    placeholder="enter your last name"
-                  />
+              <!-- Payment info -->
+              <div class="form-group payment__info">
+                <h3 class="form-title">payment info</h3>
+
+                <div class="input-group">
+                  <label for="cardholdername" class="input-label"
+                    >cardholder name</label
+                  >
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/user.svg"
+                      alt="user icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="cardholdername"
+                      value="John Doe"
+                      placeholder="enter your cardholder name"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <!-- Payment info -->
-            <div class="form-group payment__info">
-              <h3 class="form-title">payment info</h3>
-
-              <div class="input-group">
-                <label for="cardholdername" class="input-label"
-                  >cardholder name</label
-                >
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/user.svg"
-                    alt="user icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="cardholdername"
-                    value="John Doe"
-                    placeholder="enter your cardholder name"
-                  />
+                <div class="input-group">
+                  <label for="cardnumber" class="input-label"
+                    >card number</label
+                  >
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/card.svg"
+                      alt="card icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="cardnumber"
+                      value="1234 - 5678 - 9012 - 3456"
+                      placeholder="enter your card number"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="input-group">
-                <label for="cardnumber" class="input-label">card number</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/card.svg"
-                    alt="card icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="cardnumber"
-                    value="1234 - 5678 - 9012 - 3456"
-                    placeholder="enter your card number"
-                  />
+                <div class="input-group">
+                  <label for="securitycode" class="input-label"
+                    >security code</label
+                  >
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/card.svg"
+                      alt="card icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="securitycode"
+                      value="CVV 123"
+                      placeholder="security code"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="input-group">
-                <label for="securitycode" class="input-label"
-                  >security code</label
-                >
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/card.svg"
-                    alt="card icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="securitycode"
-                    value="CVV 123"
-                    placeholder="security code"
-                  />
-                </div>
-              </div>
-
-              <div class="input-group">
-                <label for="expiredate" class="input-label">expire date</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/calendar.svg"
-                    alt="calendar icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="date"
-                    id="expiredate"
-                    value="2028-07-12"
-                    placeholder="expire date"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Billing address -->
-            <div class="form-group billing__address">
-              <h3 class="form-title">billing address</h3>
-
-              <div class="input-group">
-                <label for="country" class="input-label">country</label>
-                <div class="input-area">
-                  <img class="input-icon" src="icons/map.svg" alt="map icon" />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="country"
-                    value="USA"
-                    placeholder="country"
-                  />
+                <div class="input-group">
+                  <label for="expiredate" class="input-label"
+                    >expire date</label
+                  >
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/calendar.svg"
+                      alt="calendar icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="date"
+                      id="expiredate"
+                      value="2028-07-12"
+                      placeholder="expire date"
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div class="input-group">
-                <label for="city" class="input-label">city</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/gray-map.svg"
-                    alt="map icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="city"
-                    value="San Francisco"
-                    placeholder="city"
-                  />
+              <!-- Billing address -->
+              <div class="form-group billing__address">
+                <h3 class="form-title">billing address</h3>
+
+                <div class="input-group">
+                  <label for="country" class="input-label">country</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/map.svg"
+                      alt="map icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="country"
+                      value="USA"
+                      placeholder="country"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="city" class="input-label">city</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/gray-map.svg"
+                      alt="map icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="city"
+                      value="San Francisco"
+                      placeholder="city"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="state" class="input-label">state</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/gray-map.svg"
+                      alt="map icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="state"
+                      value="California"
+                      placeholder="state"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="address" class="input-label">address</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/gray-map.svg"
+                      alt="map icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="text"
+                      id="address"
+                      value="Manhattan, 23/ 123"
+                      placeholder="address"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="zipcode" class="input-label">zip code</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/copy.svg"
+                      alt="document icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="number"
+                      id="zipcode"
+                      value="33013"
+                      placeholder="zip code"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="email" class="input-label">contact e-mail</label>
+                  <div class="input-area">
+                    <img
+                      class="input-icon"
+                      src="icons/email.svg"
+                      alt="email icon"
+                    />
+                    <input
+                      class="input-field"
+                      type="email"
+                      id="email"
+                      value="Manhattan, 23/ 123"
+                      placeholder="email"
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div class="input-group">
-                <label for="state" class="input-label">state</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/gray-map.svg"
-                    alt="map icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="state"
-                    value="California"
-                    placeholder="state"
-                  />
-                </div>
+              <!-- Checkbox -->
+              <div class="form__checkbox">
+                <span>Save Billing info for later</span>
+                <label for="saving">
+                  <input type="checkbox" name="saving" id="saving" />
+                  <!-- Toggle -->
+                  <span class="switch"></span>
+                </label>
               </div>
 
-              <div class="input-group">
-                <label for="address" class="input-label">address</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/gray-map.svg"
-                    alt="map icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="text"
-                    id="address"
-                    value="Manhattan, 23/ 123"
-                    placeholder="address"
-                  />
-                </div>
-              </div>
+              <!-- Pay button -->
+              <button type="button" class="btn btn-primary">pay now</button>
+            </form>
+          </main>
+        </div>
 
-              <div class="input-group">
-                <label for="zipcode" class="input-label">zip code</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/copy.svg"
-                    alt="document icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="number"
-                    id="zipcode"
-                    value="33013"
-                    placeholder="zip code"
-                  />
-                </div>
-              </div>
+        <!-- Footer -->
+        <footer>
+          <ul class="social-media">
+            <li>
+              <span class="left-line line"></span>
+            </li>
+            <li>
+              <img src="icons/instagram.svg" alt="instagram icon" />
+            </li>
+            <li>
+              <img src="icons/facebook.svg" alt="facebook icon" />
+            </li>
+            <li>
+              <img src="icons/twitter.svg" alt="x icon" />
+            </li>
+            <li>
+              <span class="right-line line"></span>
+            </li>
+          </ul>
 
-              <div class="input-group">
-                <label for="email" class="input-label">contact e-mail</label>
-                <div class="input-area">
-                  <img
-                    class="input-icon"
-                    src="icons/email.svg"
-                    alt="email icon"
-                  />
-                  <input
-                    class="input-field"
-                    type="email"
-                    id="email"
-                    value="Manhattan, 23/ 123"
-                    placeholder="email"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <!-- Checkbox -->
-            <div class="form__checkbox">
-              <span>Save Billing info for later</span>
-              <label for="saving">
-                <input type="checkbox" name="saving" id="saving" />
-                <!-- Toggle -->
-                <span class="switch"></span>
-              </label>
-            </div>
-
-            <!-- Pay button -->
-            <button type="button" class="btn btn-primary">pay now</button>
-          </form>
-        </main>
+          <!-- Copyright -->
+          <h4 class="copyright">Yolo &copy; 2025. All rights reserved</h4>
+        </footer>
       </div>
-
-      <!-- Footer -->
-      <footer>
-        <ul class="social-media">
-          <li>
-            <span class="left-line line"></span>
-          </li>
-          <li>
-            <img src="icons/instagram.svg" alt="instagram icon" />
-          </li>
-          <li>
-            <img src="icons/facebook.svg" alt="facebook icon" />
-          </li>
-          <li>
-            <img src="icons/twitter.svg" alt="x icon" />
-          </li>
-          <li>
-            <span class="right-line line"></span>
-          </li>
-        </ul>
-
-        <!-- Copyright -->
-        <h4 class="copyright">Yolo &copy; 2025. All rights reserved</h4>
-      </footer>
     </div>
   </body>
 </html>

@@ -28,6 +28,8 @@ html {
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
   font-family: Helvetica, sans-serif;
 }
 
@@ -61,19 +63,6 @@ a:visited {
 
 a:hover {
   text-decoration: underline solid #000;
-}
-
-/* Container */
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-.child-container {
-  padding: 24px 24px 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 /* Footer */
@@ -120,17 +109,6 @@ footer {
     min-height: 100vh;
     height: 100%;
     display: flex;
-  }
-
-  /* Container */
-  .container {
-    position: relative;
-    flex: 1;
-  }
-
-  .child-container {
-    padding: 0 124px 60px;
-    gap: 40px;
   }
 
   /* Footer */
