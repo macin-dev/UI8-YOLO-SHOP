@@ -9,7 +9,6 @@
 
 /* Container */
 .container {
-  /* layout highlight */
   height: 100%;
 }
 
@@ -34,5 +33,10 @@
     max-width: 1192px;
     /* Center content */
     margin: 0 auto;
+  }
+
+  /* Content padding */
+  .main__content-padding {
+    padding: 0;
   }
 }
