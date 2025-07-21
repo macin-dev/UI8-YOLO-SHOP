@@ -1,6 +1,6 @@
 /* SIGNUP STYLESHEET */
 /* Layout */
-.hero-signup {
+.hero-img {
   display: none;
 }
 
@@ -12,7 +12,7 @@
 /* BREAKPOINTS */
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
-  .hero-signup {
+  .hero-img {
     display: block;
     object-position: 72%;
   }

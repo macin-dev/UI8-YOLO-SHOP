@@ -8,6 +8,10 @@
 }
 
 /* Main content  */
+.hero-banner {
+  flex: 1;
+}
+
 .hero-banner .article-container {
   padding-top: 35px;
 }
