@@ -103,8 +103,20 @@ input[type="checkbox"]:checked + .switch::before {
   order: 1;
 }
 
+/* Header menu */
+.main__content .header__menu {
+  position: static;
+  width: 100%;
+  padding-right: 24px;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 414px) {
+  /* Header menu */
+  .main__content .header__menu {
+    padding: 0;
+  }
+
   /* Payment */
   .payment__info {
     flex-direction: row;

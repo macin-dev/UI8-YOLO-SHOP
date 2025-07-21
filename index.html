@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/page/home.css" />
+
+    <!-- Components -->
     <link rel="stylesheet" href="css/components/buttons.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
 
     <!-- Wrapper -->
     <link rel="stylesheet" href="css/layout/wrapper.css" />
@@ -17,6 +20,50 @@
       <!-- Content container -->
       <div class="container">
         <main class="main__content main__content-padding">
+          <!-- Header -->
+          <header class="header__menu">
+            <nav>
+              <!-- Toggle -->
+              <button type="button" class="menu__icon">
+                <img src="icons/menu.svg" alt="menu icon" />
+              </button>
+
+              <!-- Desktop menu -->
+              <ul>
+                <li class="menu__option menu-active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu__option">
+                  <a href="catalogue.html">women</a>
+                </li>
+                <li class="menu__option">
+                  <a href="sales.html">sales</a>
+                </li>
+                <li class="menu__option">
+                  <a href="signup.html">signup</a>
+                </li>
+              </ul>
+
+              <!-- Actions -->
+              <div class="menu__group">
+                <button type="button">
+                  <img src="icons/search.svg" alt="search icon" />
+                </button>
+                <button type="button">
+                  <a href="cart.html">
+                    <img src="icons/cart.svg" alt="cart icon" />
+                  </a>
+                </button>
+                <button type="button">
+                  <a href="settings.html">
+                    <img src="icons/user.svg" alt="user icon" />
+                  </a>
+                </button>
+              </div>
+            </nav>
+          </header>
+
+          <!-- Content -->
           <div class="home__info">
             <p>
               Yolo is the leading destination for stylish clothes, everyday

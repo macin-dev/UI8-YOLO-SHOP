@@ -155,6 +155,13 @@
   color: #000000;
 }
 
+/* Header menu */
+.main__content .header__menu {
+  position: static;
+  width: 100%;
+  padding-right: 24px;
+}
+
 /* BREAKPOINTS */
 /* viewport < 414px & 414px > viewport */
 @media screen and (max-width: 413px) {
@@ -199,6 +206,11 @@
 }
 
 @media screen and (min-width: 970px) {
+  /* Header menu */
+  .main__content .header__menu {
+    padding: 0;
+  }
+
   /* Container */
   .child-container {
     overflow: auto;

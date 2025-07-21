@@ -9,11 +9,25 @@
   margin-bottom: 50px;
 }
 
+/* Header menu */
+.main__content .header__menu {
+  position: static;
+  width: 100%;
+  padding-right: 24px;
+}
+
 /* BREAKPOINTS */
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
   .hero-img {
     display: block;
     object-position: 72%;
+  }
+
+  /* Header menu */
+  .main__content .header__menu {
+    position: absolute;
+    width: initial;
+    padding: 0;
   }
 }
