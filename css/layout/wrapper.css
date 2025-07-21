@@ -11,7 +11,10 @@
 .container {
   /* layout highlight */
   height: 100%;
-  /* Set padding left and right sides */
+}
+
+/* Content padding */
+.main__content-padding {
   padding: 0 24px;
 }
 
@@ -31,7 +34,5 @@
     max-width: 1192px;
     /* Center content */
     margin: 0 auto;
-    /* Remove padding */
-    padding: 0;
   }
 }
