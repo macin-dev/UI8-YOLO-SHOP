@@ -1,6 +1,6 @@
 /* SIGNIN STYLESHEET */
 /* Layout */
-.hero-signin {
+.hero-img {
   display: none;
 }
 
@@ -21,10 +21,6 @@
   margin: 0;
 }
 
-.article-signin {
-  padding-bottom: 130px;
-}
-
 /* Button */
 .btn-signin {
   margin-bottom: 50px;
@@ -33,7 +29,7 @@
 /* BREAKPOINTS */
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
-  .hero-signin {
+  .hero-img {
     display: block;
     object-position: 5%;
   }

@@ -26,7 +26,13 @@
 /* BREAKPOINTS */
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
-  .hero-contact {
-    order: 1;
+  .hero-banner .hero-img {
+    left: initial;
+    right: 0;
+  }
+
+  .hero-banner .article-container {
+    grid-area: 1 / 1 / 2 /2;
+    justify-self: start;
   }
 }
