@@ -2,7 +2,13 @@
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
   /* Layout */
-  .hero-subscribe {
-    order: 1;
+  .hero-banner .hero-img {
+    left: initial;
+    right: 0;
+  }
+
+  .article-container {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
   }
 }
