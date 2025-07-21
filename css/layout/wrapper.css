@@ -5,15 +5,14 @@
   /* Fill remaining 
     space of its flex container*/
   width: 100%;
-  /* Set padding left and right sides */
-  padding: 0 24px;
-  /* layout highlight */
 }
 
 /* Container */
 .container {
   /* layout highlight */
   height: 100%;
+  /* Set padding left and right sides */
+  padding: 0 24px;
 }
 
 /* MEDIA QUERIES */
@@ -24,8 +23,6 @@
     max-width: 1440px;
     /* Center wrapper */
     margin: 0 auto;
-    /* Remove padding */
-    padding: 0;
   }
 
   /* Container */
@@ -34,5 +31,7 @@
     max-width: 1192px;
     /* Center content */
     margin: 0 auto;
+    /* Remove padding */
+    padding: 0;
   }
 }
