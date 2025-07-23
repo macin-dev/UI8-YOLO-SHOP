@@ -45,65 +45,6 @@
   row-gap: 20px;
 }
 
-/* Checkbox */
-.form__checkbox {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.form__checkbox span {
-  flex: 1 1 auto;
-}
-
-/* Parent container */
-.form__checkbox label {
-  width: 44px;
-  height: 25px;
-  position: relative;
-}
-
-/* Hide checkbox */
-.form__checkbox input[type="checkbox"] {
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-
-/* Toggle switch */
-.switch {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #a4a4a4;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.switch::before {
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  width: 7px;
-  height: 17px;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  border-radius: 3px;
-  transition: all 0.2s ease-in-out;
-}
-
-input[type="checkbox"]:checked + .switch {
-  background-color: #34d39a;
-}
-
-input[type="checkbox"]:checked + .switch::before {
-  translate: 18px;
-}
-
 /* Payment */
 .payment__info .input-group:nth-child(4) {
   order: 1;
