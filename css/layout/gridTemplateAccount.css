@@ -1,9 +1,7 @@
 /* Account section layout */
 /* Header menu */
-.main__content .header__menu {
-  position: static;
-  width: 100%;
-  padding-right: 24px;
+.container .main__content-padding {
+  padding-top: calc(56px + 40px);
 }
 
 /* Grid container */
@@ -29,11 +27,6 @@
 /* BREAKPOINTS */
 /* 970px - Tablet & Desktop */
 @media screen and (min-width: 970px) {
-  /* Header menu */
-  .main__content .header__menu {
-    padding: 0;
-  }
-
   /* Grid container */
   .grid__account {
     grid-template-columns: minmax(auto, 390px) 1fr;
