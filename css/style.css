@@ -73,6 +73,16 @@ a:hover {
   height: 100%;
 }
 
+/* Links */
+.main__content button a {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* Footer */
 footer {
   width: 312px;

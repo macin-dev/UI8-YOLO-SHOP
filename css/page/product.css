@@ -12,6 +12,7 @@
 
 .product .btn-back {
   margin: 0;
+  justify-self: start;
 }
 
 /* Product preview */
