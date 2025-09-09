@@ -1,6 +1,6 @@
 # YOLO SHOP
 
-![Author](https://img.shields.io/badge/Author-D4ME-black)
+![Author Design](https://img.shields.io/badge/Author-D4ME-black)
 
 **Design Link**: [UI8 YOLO SHOP](https://ui8.net/d4me_/products/yolo-shop-responsive-template)
 
