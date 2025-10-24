@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/components/header.css" />
     <link rel="stylesheet" href="css/components/buttons.css" />
     <link rel="stylesheet" href="css/components/input.css" />
+    <link rel="stylesheet" href="css/components/menuMobile.css" />
 
     <!-- Wrapper -->
     <link rel="stylesheet" href="css/layout/wrapper.css" />
@@ -29,7 +30,7 @@
           <header class="header__menu">
             <nav>
               <!-- Toggle -->
-              <button type="button" class="menu__icon">
+              <button type="button" class="toggle-menu toggle-on">
                 <img src="icons/menu.svg" alt="menu icon" />
               </button>
 
@@ -164,7 +165,72 @@
             <h4 class="copyright">Yolo &copy; 2025. All rights reserved</h4>
           </footer>
         </main>
+
+        <!-- Mobile menu -->
+        <nav class="menu-mobile hide-menu">
+          <!-- Close menu button-->
+          <button type="button" class="toggle-menu toggle-off">
+            <img src="/icons/close.svg" alt="close the menu modal" class="" />
+          </button>
+
+          <ul class="lists-group">
+            <!-- Links -->
+            <li class="menu-links">
+              <a href="index.html">Home</a>
+              <img
+                src="/icons/drop_down-right.svg"
+                alt="drop down right icon"
+              />
+            </li>
+
+            <li class="menu-links">
+              <a href="signup.html">Sign up</a>
+              <img
+                src="/icons/drop_down-right.svg"
+                alt="drop down right icon"
+              />
+            </li>
+            <li class="menu-links">
+              <a href="about.html">About us</a>
+              <img
+                src="/icons/drop_down-right.svg"
+                alt="drop down right icon"
+              />
+            </li>
+            <li class="menu-links">
+              <a href="catalogue.html">Catalogue</a>
+              <img
+                src="/icons/drop_down-right.svg"
+                alt="drop down right icon"
+              />
+            </li>
+            <li class="menu-links">
+              <a href="sales.html">Sales</a>
+              <img
+                src="/icons/drop_down-right.svg"
+                alt="drop down right icon"
+              />
+            </li>
+            <li class="menu-links">
+              <a href="subscribe.html">Subscribe</a>
+              <img
+                src="/icons/drop_down-right.svg"
+                alt="drop down right icon"
+              />
+            </li>
+            <li class="menu-links">
+              <a href="contact.html" class="active-link">Contact us</a>
+              <img
+                src="/icons/drop_down-right.svg"
+                alt="drop down right icon"
+              />
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="/js/index.js"></script>
   </body>
 </html>

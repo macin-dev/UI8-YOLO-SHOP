@@ -5,10 +5,10 @@
   top: 0;
   left: 0;
   right: 24px;
-  z-index: 99;
+  z-index: 1;
 }
 
-.menu__icon {
+.toggle-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,7 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.menu__icon:hover {
+.toggle-menu:hover {
   background-color: #000000;
 }
 
